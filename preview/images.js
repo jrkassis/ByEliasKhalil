@@ -11,7 +11,7 @@ window.SITE_IMAGES = {
   sampleMidnightBall: "../images/e111c2f6-8e7f-42ed-842a-43925cdadce71.jpeg",
   sampleAtelierDetails: "../images/79bb31d7-290b-4636-9419-04408f3868f5.jpeg",
   sampleTerraceSoiree: "../images/WhatsApp Image 2026-07-17 at 9.24.37 AM1.jpeg",
-  converseCta: "../images/ABD_3723.jpeg",
+  converseCta: "../images/ABD_3723.webp",
 
   /* —— Portfolio page —— */
   portfolioHero: "../images/WhatsApp Image 2026-07-17 at 9.25.00 AM (1)1.jpeg",
