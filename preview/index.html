@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>By Elias Khalil - Design Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+  <div class="preview-banner" aria-hidden="true">
+    Make your dreams come true
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <p class="preloader-brand"><em>by</em> Elias Khalil</p>
+      <div class="preloader-line"></div>
+      <p class="preloader-tag">Architecting extraordinary events</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html"><em>by</em> Elias Khalil</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="is-active" href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="about.html#services">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a class="is-active" href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="about.html#services">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-media">
+        <img
+          data-image="homeHero"
+          alt="Candlelit luxury wedding reception with floral installations"
+        />
+        <div class="hero-veil"></div>
+        <div class="hero-stars" aria-hidden="true"></div>
+      </div>
+
+      <svg class="celestial-overlay" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <radialGradient id="orbitGlow" cx="50%" cy="48%" r="42%">
+            <stop offset="0%" stop-color="#C4A46A" stop-opacity="0.22" />
+            <stop offset="55%" stop-color="#C4A46A" stop-opacity="0.06" />
+            <stop offset="100%" stop-color="#C4A46A" stop-opacity="0" />
+          </radialGradient>
+          <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E8D5A8" stop-opacity="0.15" />
+            <stop offset="50%" stop-color="#C4A46A" stop-opacity="0.85" />
+            <stop offset="100%" stop-color="#8A7344" stop-opacity="0.2" />
+          </linearGradient>
+        </defs>
+
+        <ellipse class="orbit orbit-1" cx="720" cy="430" rx="520" ry="210" fill="none" stroke="url(#goldStroke)" stroke-width="0.7" />
+        <ellipse class="orbit orbit-2" cx="720" cy="430" rx="390" ry="155" fill="none" stroke="url(#goldStroke)" stroke-width="0.55" />
+        <ellipse class="orbit orbit-3" cx="720" cy="430" rx="260" ry="100" fill="none" stroke="url(#goldStroke)" stroke-width="0.45" />
+        <circle cx="720" cy="430" r="280" fill="url(#orbitGlow)" />
+
+        <g class="constellation" stroke="#C4A46A" stroke-width="0.6" fill="#E8D5A8">
+          <line x1="180" y1="160" x2="240" y2="210" opacity="0.45" />
+          <line x1="240" y1="210" x2="300" y2="175" opacity="0.45" />
+          <line x1="300" y1="175" x2="355" y2="230" opacity="0.35" />
+          <circle cx="180" cy="160" r="1.8" />
+          <circle cx="240" cy="210" r="2.2" />
+          <circle cx="300" cy="175" r="1.6" />
+          <circle cx="355" cy="230" r="1.4" />
+
+          <line x1="1120" y1="140" x2="1190" y2="190" opacity="0.4" />
+          <line x1="1190" y1="190" x2="1260" y2="155" opacity="0.4" />
+          <circle cx="1120" cy="140" r="1.6" />
+          <circle cx="1190" cy="190" r="2" />
+          <circle cx="1260" cy="155" r="1.5" />
+        </g>
+
+        <g class="filigree" fill="none" stroke="url(#goldStroke)" stroke-width="1">
+          <path d="M48 48 C120 52, 140 90, 148 160" />
+          <path d="M48 48 C52 120, 90 140, 160 148" />
+          <path d="M1392 48 C1320 52, 1300 90, 1292 160" />
+          <path d="M1392 48 C1388 120, 1350 140, 1280 148" />
+        </g>
+      </svg>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">The Unseen Luxury Edition</p>
+        <h1 class="brand brand-split">
+          <span class="word"><em>by</em></span>
+          <span class="word">Elias</span>
+          <span class="word">Khalil</span>
+        </h1>
+        <p class="tagline reveal">Architecting the world’s most extraordinary events.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-gold btn-magnetic" href="#work">View the Portfolio</a>
+          <a class="btn btn-ghost btn-magnetic" href="contact.html">Private Inquiry</a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#work" aria-label="Scroll to featured work">
+        <span>Discover the work</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- FEATURED WORK -->
+    <section class="featured reveal" id="work">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow dark">Featured Worlds</p>
+          <h2>Moments that define a house.</h2>
+        </div>
+        <a class="text-link" href="portfolio.html">View all projects</a>
+      </div>
+
+      <div class="featured-strip reveal-stagger">
+        <article class="feature-card">
+          <img data-image="featuredDesertBloom" alt="Grand wedding floral installation" />
+          <div class="feature-meta">
+            <span>2024 · Dubai</span>
+            <h3>Desert Bloom Wedding</h3>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img data-image="featuredMurexGala" alt="Gala dinner table setting" />
+          <div class="feature-meta">
+            <span>2023 · Beirut</span>
+            <h3>Murex d’Or Gala</h3>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img data-image="featuredAegeanVows" alt="Candlelit evening reception" />
+          <div class="feature-meta">
+            <span>2024 · Bodrum</span>
+            <h3>Aegean Vows</h3>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img data-image="featuredAtelierRunway" alt="Fashion runway event" />
+          <div class="feature-meta">
+            <span>2023 · Istanbul</span>
+            <h3>Atelier Runway</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- OUR WORLD - refined from liked orbital layout -->
+    <section class="our-world reveal" id="world" aria-label="Our World">
+      <div class="world-stars" aria-hidden="true"></div>
+      <p class="eyebrow">The Universe</p>
+      <h2 class="world-title">Our World</h2>
+
+      <div class="orbit-map">
+        <div class="orbit-ring ring-outer" aria-hidden="true"></div>
+        <div class="orbit-ring ring-mid" aria-hidden="true"></div>
+        <div class="orbit-ring ring-inner" aria-hidden="true"></div>
+        <div class="orbit-core">
+          <span><em>by</em> Elias Khalil</span>
+        </div>
+
+        <div class="dest dest-dubai">
+          <span class="dest-dot"></span>
+          <div class="dest-label">
+            <strong>Dubai</strong>
+            <span>UAE</span>
+          </div>
+        </div>
+        <div class="dest dest-paris">
+          <span class="dest-dot"></span>
+          <div class="dest-label">
+            <strong>Paris</strong>
+            <span>France</span>
+          </div>
+        </div>
+        <div class="dest dest-beirut">
+          <span class="dest-dot"></span>
+          <div class="dest-label">
+            <strong>Beirut</strong>
+            <span>Lebanon</span>
+          </div>
+        </div>
+        <div class="dest dest-bodrum">
+          <span class="dest-dot"></span>
+          <div class="dest-label">
+            <strong>Bodrum</strong>
+            <span>Turkey</span>
+          </div>
+        </div>
+        <div class="dest dest-istanbul">
+          <span class="dest-dot"></span>
+          <div class="dest-label">
+            <strong>Istanbul</strong>
+            <span>Turkey</span>
+          </div>
+        </div>
+        <div class="dest dest-europe">
+          <span class="dest-dot"></span>
+          <div class="dest-label">
+            <strong>Europe</strong>
+            <span>Destination</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="world-foot">From Lebanon to every corner of the world.</p>
+    </section>
+
+    <!-- PORTFOLIO GRID SAMPLE -->
+    <section class="portfolio-sample reveal">
+      <div class="section-head tight">
+        <div>
+          <p class="eyebrow dark">The Portfolio</p>
+          <h2>A legacy of extraordinary moments.</h2>
+        </div>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Portfolio filters">
+        <button class="filter is-active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="weddings">Destination Weddings</button>
+        <button class="filter" type="button" data-filter="galas">Gala Dinners</button>
+        <button class="filter" type="button" data-filter="fashion">Fashion Shows</button>
+        <button class="filter" type="button" data-filter="launches">Brand Launches</button>
+      </div>
+
+      <div class="masonry reveal-stagger">
+        <article class="tile tall" data-category="weddings">
+          <img data-image="sampleCoastalCeremony" alt="Bride and groom portrait" />
+          <div class="tile-meta">
+            <span>2024 · Capri</span>
+            <h3>Coastal Ceremony</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="galas">
+          <img data-image="samplePrivateDining" alt="Wedding floral arch" />
+          <div class="tile-meta">
+            <span>2023 · Paris</span>
+            <h3>Private Dining</h3>
+          </div>
+        </article>
+        <article class="tile wide" data-category="weddings">
+          <img data-image="sampleRoyalCelebration" alt="Celebration with sparklers" />
+          <div class="tile-meta">
+            <span>2024 · Riyadh</span>
+            <h3>Royal Celebration</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="galas">
+          <img data-image="sampleMidnightBall" alt="Ballroom reception" />
+          <div class="tile-meta">
+            <span>2022 · Cairo</span>
+            <h3>Midnight Ball</h3>
+          </div>
+        </article>
+        <article class="tile tall" data-category="fashion">
+          <img data-image="sampleAtelierDetails" alt="Wedding rings detail" />
+          <div class="tile-meta">
+            <span>2023 · London</span>
+            <h3>Atelier Details</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="weddings">
+          <img data-image="sampleTerraceSoiree" alt="Outdoor evening reception" />
+          <div class="tile-meta">
+            <span>2024 · Amalfi</span>
+            <h3>Terrace Soirée</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STATS - refined from liked four-column bar -->
+    <section class="stats reveal" aria-label="Key figures">
+      <div class="stat">
+        <p class="stat-num">250+</p>
+        <p class="stat-label">Creative Specialists</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">3</p>
+        <p class="stat-label">Global Offices</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">100+</p>
+        <p class="stat-label">Interns Trained</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">15+</p>
+        <p class="stat-label">Years of Excellence</p>
+      </div>
+    </section>
+
+    <!-- OUR PRESENCE - refined offices layout -->
+    <section class="presence reveal" id="presence">
+      <div class="presence-intro">
+        <p class="eyebrow dark">Our Presence</p>
+        <h2>3 Global Offices</h2>
+      </div>
+
+      <div class="office-grid">
+        <article class="office">
+          <span class="office-index">01</span>
+          <h3>Headquarters</h3>
+          <p class="office-meta">250+ Freelancers · 100+ Interns</p>
+          <p class="office-copy">
+            Our Beirut headquarters is the creative nucleus - where vision, craft, and global coordination begin.
+          </p>
+        </article>
+        <article class="office">
+          <span class="office-index">02</span>
+          <h3>Gulf Office</h3>
+          <p class="office-meta">50 Full-Time Members</p>
+          <p class="office-copy">
+            Anchored in the region’s most ambitious celebrations, delivering scale with intimate precision.
+          </p>
+        </article>
+        <article class="office">
+          <span class="office-index">03</span>
+          <h3>Europe Office</h3>
+          <p class="office-meta">Newly Launched</p>
+          <p class="office-copy">
+            A European presence for destination weddings and couture gatherings across the continent.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONVERSATION CTA - refined from liked banner -->
+    <section class="converse" id="inquire">
+      <div class="converse-media">
+        <img
+          data-image="converseCta"
+          alt="Grand villa illuminated at dusk"
+        />
+        <div class="converse-veil"></div>
+      </div>
+      <div class="converse-content">
+        <a class="converse-email" href="mailto:worldwide@byeliaskhalil.com">worldwide@byeliaskhalil.com</a>
+        <a class="btn btn-ghost btn-magnetic" href="contact.html">Begin the Conversation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER - refined from liked structure -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="index.html"><em>by</em> Elias Khalil</a>
+        <p class="footer-tag">3 Global Offices · Worldwide</p>
+        <p class="footer-about">
+          A global creative house crafting the world’s most extraordinary events - weddings, galas, and moments that become legacy.
+        </p>
+        <div class="footer-contact">
+          <a href="mailto:worldwide@byeliaskhalil.com">worldwide@byeliaskhalil.com</a>
+          <a href="tel:+961000000">+961 · Beirut</a>
+          <a href="tel:+971000000">+971 · Dubai</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="about.html#services">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="#">Instagram · Weddings</a>
+        <a href="#">Instagram · Events</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+        <a href="#">Threads</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 by Elias Khalil. All rights reserved.</p>
+      <p>A Global Creative House</p>
+    </div>
+  </footer>
+
+  <script src="images.js"></script>
+  <script src="preview.js"></script>
+</body>
+</html>

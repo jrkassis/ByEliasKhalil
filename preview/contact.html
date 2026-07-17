@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - by Elias Khalil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading page-inner">
+  <div class="preview-banner" aria-hidden="true">
+    Make your dreams come true
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <p class="preloader-brand"><em>by</em> Elias Khalil</p>
+      <div class="preloader-line"></div>
+      <p class="preloader-tag">Begin the Conversation</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html"><em>by</em> Elias Khalil</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="about.html#services">Services</a>
+      <a class="is-active" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="about.html#services">Services</a>
+    <a class="is-active" href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="contact-page" aria-label="Contact">
+      <div class="contact-body">
+        <div class="reveal">
+          <p class="eyebrow dark">Private Inquiry</p>
+          <h1>Begin the conversation.</h1>
+          <p class="contact-lead">
+            Tell us about the world you imagine - a destination wedding, a gala evening, a couture launch. Every commission begins with a private conversation.
+          </p>
+          <div class="contact-direct">
+            <a href="mailto:worldwide@byeliaskhalil.com">worldwide@byeliaskhalil.com</a>
+            <a href="tel:+961000000">+961 · Beirut</a>
+            <a href="tel:+971000000">+971 · Dubai</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" action="mailto:worldwide@byeliaskhalil.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Full Name</label>
+              <input id="cf-name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-type">Occasion</label>
+              <select id="cf-type" name="occasion">
+                <option>Destination Wedding</option>
+                <option>Gala Dinner</option>
+                <option>Fashion Show</option>
+                <option>Brand Launch</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="cf-location">Destination</label>
+              <input id="cf-location" name="destination" type="text" placeholder="City or venue in mind" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Your Vision</label>
+            <textarea id="cf-message" name="message" placeholder="Share dates, guest count, and the atmosphere you dream of…"></textarea>
+          </div>
+
+          <button class="btn btn-dark btn-magnetic" type="submit">Send Inquiry</button>
+          <p class="form-note">Form is a design preview - submissions will be wired to email/CRM in the final build.</p>
+        </form>
+      </div>
+
+      <div class="contact-visual">
+        <img
+          data-image="contactVisual"
+          alt="Elegant candlelit table setting awaiting guests"
+        />
+        <div class="contact-visual-veil"></div>
+        <div class="contact-visual-caption">
+          <p class="eyebrow">Worldwide</p>
+          <p>Every world begins with a single conversation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="index.html"><em>by</em> Elias Khalil</a>
+        <p class="footer-tag">3 Global Offices · Worldwide</p>
+        <p class="footer-about">
+          A global creative house crafting the world’s most extraordinary events - weddings, galas, and moments that become legacy.
+        </p>
+        <div class="footer-contact">
+          <a href="mailto:worldwide@byeliaskhalil.com">worldwide@byeliaskhalil.com</a>
+          <a href="tel:+961000000">+961 · Beirut</a>
+          <a href="tel:+971000000">+971 · Dubai</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="about.html#services">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="#">Instagram · Weddings</a>
+        <a href="#">Instagram · Events</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+        <a href="#">Threads</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 by Elias Khalil. All rights reserved.</p>
+      <p>A Global Creative House</p>
+    </div>
+  </footer>
+
+  <script src="images.js"></script>
+  <script src="preview.js"></script>
+</body>
+</html>

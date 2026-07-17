@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - by Elias Khalil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading page-inner">
+  <div class="preview-banner" aria-hidden="true">
+    Make your dreams come true
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <p class="preloader-brand"><em>by</em> Elias Khalil</p>
+      <div class="preloader-line"></div>
+      <p class="preloader-tag">The Portfolio</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html"><em>by</em> Elias Khalil</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a class="is-active" href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="about.html#services">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a class="is-active" href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="about.html#services">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section class="page-hero" aria-label="Portfolio hero">
+      <div class="page-hero-media">
+        <img
+          data-image="portfolioHero"
+          alt="Elegant outdoor wedding reception at golden hour"
+        />
+        <div class="page-hero-veil"></div>
+        <div class="page-hero-stars" aria-hidden="true"></div>
+      </div>
+      <div class="page-hero-content reveal">
+        <p class="eyebrow">The Portfolio</p>
+        <h1>A legacy of extraordinary moments.</h1>
+        <p class="page-hero-lead">From intimate vows to grand galas - each world crafted with couture precision across three continents.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-page">
+      <div class="portfolio-intro reveal">
+        <p class="eyebrow dark">Curated Worlds</p>
+        <h2>Every celebration tells a story.</h2>
+        <p>Browse a selection of destination weddings, gala evenings, fashion presentations, and brand launches - each designed as an immersive experience, never a template.</p>
+      </div>
+
+      <div class="filters reveal" role="tablist" aria-label="Portfolio filters">
+        <button class="filter is-active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="weddings">Destination Weddings</button>
+        <button class="filter" type="button" data-filter="galas">Gala Dinners</button>
+        <button class="filter" type="button" data-filter="fashion">Fashion Shows</button>
+        <button class="filter" type="button" data-filter="launches">Brand Launches</button>
+      </div>
+
+      <div class="masonry reveal-stagger">
+        <article class="tile tall" data-category="weddings">
+          <img data-image="sampleCoastalCeremony" alt="Bride and groom portrait" />
+          <div class="tile-meta">
+            <span>2024 · Capri</span>
+            <h3>Coastal Ceremony</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="galas">
+          <img data-image="samplePrivateDining" alt="Wedding floral arch" />
+          <div class="tile-meta">
+            <span>2023 · Paris</span>
+            <h3>Private Dining</h3>
+          </div>
+        </article>
+        <article class="tile wide" data-category="weddings">
+          <img data-image="sampleRoyalCelebration" alt="Celebration with sparklers" />
+          <div class="tile-meta">
+            <span>2024 · Riyadh</span>
+            <h3>Royal Celebration</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="galas">
+          <img data-image="sampleMidnightBall" alt="Ballroom reception" />
+          <div class="tile-meta">
+            <span>2022 · Cairo</span>
+            <h3>Midnight Ball</h3>
+          </div>
+        </article>
+        <article class="tile tall" data-category="fashion">
+          <img data-image="featuredAtelierRunway" alt="Fashion runway event" />
+          <div class="tile-meta">
+            <span>2023 · Istanbul</span>
+            <h3>Atelier Runway</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="weddings">
+          <img data-image="sampleTerraceSoiree" alt="Outdoor evening reception" />
+          <div class="tile-meta">
+            <span>2024 · Amalfi</span>
+            <h3>Terrace Soirée</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="launches">
+          <img data-image="portfolioLumiereLaunch" alt="Brand launch event lighting" />
+          <div class="tile-meta">
+            <span>2024 · Dubai</span>
+            <h3>Lumière Launch</h3>
+          </div>
+        </article>
+        <article class="tile wide" data-category="galas">
+          <img data-image="featuredMurexGala" alt="Gala dinner table setting" />
+          <div class="tile-meta">
+            <span>2023 · Beirut</span>
+            <h3>Murex d’Or Gala</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="weddings">
+          <img data-image="featuredDesertBloom" alt="Grand wedding floral installation" />
+          <div class="tile-meta">
+            <span>2024 · Dubai</span>
+            <h3>Desert Bloom Wedding</h3>
+          </div>
+        </article>
+        <article class="tile tall" data-category="fashion">
+          <img data-image="portfolioCouturePresentation" alt="Haute couture presentation" />
+          <div class="tile-meta">
+            <span>2023 · Milan</span>
+            <h3>Couture Presentation</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="launches">
+          <img data-image="portfolioMaisonReveal" alt="Luxury product reveal" />
+          <div class="tile-meta">
+            <span>2024 · London</span>
+            <h3>Maison Reveal</h3>
+          </div>
+        </article>
+        <article class="tile" data-category="weddings">
+          <img data-image="featuredAegeanVows" alt="Candlelit evening reception" />
+          <div class="tile-meta">
+            <span>2024 · Bodrum</span>
+            <h3>Aegean Vows</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band reveal">
+      <div class="cta-band-inner">
+        <p class="eyebrow">Private Inquiry</p>
+        <h2>Your world awaits.</h2>
+        <p>Every commission begins with a conversation. Share your vision - we architect the extraordinary.</p>
+        <a class="btn btn-gold btn-magnetic" href="contact.html">Begin the Conversation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="index.html"><em>by</em> Elias Khalil</a>
+        <p class="footer-tag">3 Global Offices · Worldwide</p>
+        <p class="footer-about">
+          A global creative house crafting the world’s most extraordinary events - weddings, galas, and moments that become legacy.
+        </p>
+        <div class="footer-contact">
+          <a href="mailto:worldwide@byeliaskhalil.com">worldwide@byeliaskhalil.com</a>
+          <a href="tel:+961000000">+961 · Beirut</a>
+          <a href="tel:+971000000">+971 · Dubai</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="about.html#services">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="#">Instagram · Weddings</a>
+        <a href="#">Instagram · Events</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+        <a href="#">Threads</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 by Elias Khalil. All rights reserved.</p>
+      <p>A Global Creative House</p>
+    </div>
+  </footer>
+
+  <script src="images.js"></script>
+  <script src="preview.js"></script>
+</body>
+</html>
