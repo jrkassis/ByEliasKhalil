@@ -10,6 +10,7 @@
     const hide = () => {
       preloader.classList.add("is-done");
       document.body.classList.remove("is-loading");
+      window.dispatchEvent(new Event("preloader:done"));
       setTimeout(() => preloader.remove(), 900);
     };
     if (document.fonts && document.fonts.ready) {
@@ -23,6 +24,9 @@
   } else if (preloader) {
     preloader.remove();
     document.body.classList.remove("is-loading");
+    window.dispatchEvent(new Event("preloader:done"));
+  } else {
+    window.dispatchEvent(new Event("preloader:done"));
   }
 
   /* —— Scroll: header state + pause heavy animations while scrolling —— */
@@ -162,8 +166,4 @@
       });
     });
   }
-
-  document.querySelectorAll(".brand-split .word").forEach((word, i) => {
-    word.style.animationDelay = `${0.55 + i * 0.12}s`;
-  });
 })();
