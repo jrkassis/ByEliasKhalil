@@ -1,10 +1,10 @@
 window.SITE_IMAGES = {
   /* —— Home —— */
-  homeHero: "../images/hero-image.jpeg",
+  homeHero: "../images/new_images/WhatsApp Image 2026-07-22 at 4.02.47 PM (1).jpeg",
   featuredDesertBloom: "../images/desert.jpeg",
-  featuredMurexGala: "../images/138c382f-a8ea-4526-a968-2d0106d5f1db.jpeg",
+  featuredMurexGala: "../images/new_images/WhatsApp Image 2026-08-01 at 5.50.01 PM (1).jpeg",
   featuredAegeanVows: "../images/815f2bde-7a20-4b47-be42-431902d7f16b.jpeg",
-  featuredAtelierRunway: "../images/4bfec9c6-c256-421c-90b1-a5181f58d971.jpeg",
+  featuredAtelierRunway: "../images/new_images/WhatsApp Image 2026-08-01 at 5.50.04 PM.jpeg",
   sampleCoastalCeremony: "../images/5cf975cc-982c-478f-a9d3-0437dcf31d58.jpeg",
   samplePrivateDining: "../images/WhatsApp Image 2026-07-17 at 9.30.16 AM (1).jpeg",
   sampleRoyalCelebration: "../images/1e302008-253e-476e-a6b4-39c5b6f11aeb1.jpeg",
@@ -14,17 +14,21 @@ window.SITE_IMAGES = {
   converseCta: "../images/ABD_3723.webp",
 
   /* —— Portfolio page —— */
-  portfolioHero: "../images/WhatsApp Image 2026-07-17 at 9.25.00 AM (1)1.jpeg",
+  portfolioHero: "../images/new_images/WhatsApp Image 2026-08-01 at 5.50.00 PM.jpeg",
   portfolioLumiereLaunch: "../images/WhatsApp Image 2026-07-17 at 9.24.39 AM (2).jpeg",
   portfolioCouturePresentation: "../images/56b78121-fafc-4f4b-bf84-00ba4c2886f7.jpeg",
   portfolioMaisonReveal: "../images/ab6228be-e289-4dc4-8990-ea8510e24575.jpeg",
 
   /* —— About page —— */
-  aboutHero: "../images/hero-image1.jpeg",
-  aboutPortrait: "../images/0daeecb0-8efb-4a78-ad8a-b7ee817c6c45(1).jpeg",
+  aboutHero: "../images/new_images/WhatsApp Image 2026-08-01 at 5.50.06 PM.jpeg",
+  aboutPortrait: "../images/new_images/WhatsApp Image 2026-08-01 at 5.50.07 PM.jpeg",
 
   /* —— Contact page —— */
   contactVisual: "../images/WhatsApp Image 2026-07-17 at 9.24.34 AM (1)1.jpeg",
+
+  /* —— Careers page —— */
+  careersHero: "../images/new_images/WhatsApp Image 2026-08-01 at 5.50.09 PM.jpeg",
+  careersVisual: "../images/new_images/WhatsApp Image 2026-08-01 at 5.50.10 PM.jpeg",
 };
 
 /* Applies SITE_IMAGES to every <img data-image="key"> on the page */

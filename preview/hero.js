@@ -10,6 +10,13 @@
 
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
+  /* On mobile, the browser chrome (address bar) hiding/showing as you
+     scroll fires a 'resize' event that isn't a real viewport resize.
+     ScrollTrigger's default behavior is to recalculate all trigger
+     positions on resize, and doing that mid-scroll is what produces a
+     sudden jump/fast-scroll feeling — this is GSAP's documented fix. */
+  ScrollTrigger.config({ ignoreMobileResize: true });
+
   const hero = document.querySelector(".hero-universe");
   if (!hero) return;
 
@@ -142,13 +149,24 @@
         ease: "none",
         scrollTrigger: scrollDefaults,
       });
-      gsap.to(portal, {
-        yPercent: -8,
-        scale: 0.92,
-        autoAlpha: 0.75,
-        ease: "none",
-        scrollTrigger: scrollDefaults,
-      });
+      /* fromTo with explicit values (not a plain .to()) — this tween is
+         created immediately on load, before the entrance timeline has run,
+         so a .to() would capture the portal's pre-entrance hidden state
+         (autoAlpha:0 from the gsap.set above) as its implicit "from" and
+         race the entrance: the moment the user scrolled even slightly, the
+         portal would jump toward that stale 0 instead of fading from its
+         actual on-screen state, making it disappear almost immediately. */
+      gsap.fromTo(
+        portal,
+        { yPercent: 0, scale: 1, autoAlpha: 1 },
+        {
+          yPercent: -8,
+          scale: 0.92,
+          autoAlpha: 0.75,
+          ease: "none",
+          scrollTrigger: scrollDefaults,
+        }
+      );
       gsap.to(hero.querySelector(".hero-content"), {
         yPercent: -12,
         autoAlpha: 0.6,

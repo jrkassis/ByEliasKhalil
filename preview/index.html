@@ -19,6 +19,16 @@
 
   <div class="grain" aria-hidden="true"></div>
 
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="seamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#C4A46A" stop-opacity="0" />
+        <stop offset="50%" stop-color="#E8D5A8" stop-opacity="0.95" />
+        <stop offset="100%" stop-color="#C4A46A" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+  </svg>
+
   <div class="preloader" aria-hidden="true">
     <div class="preloader-inner">
       <p class="preloader-brand"><em>by</em> Elias Khalil</p>
@@ -35,6 +45,7 @@
       <a href="about.html">About</a>
       <a href="about.html#services">Services</a>
       <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
     </nav>
     <div class="header-actions">
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
@@ -49,6 +60,7 @@
     <a href="about.html">About</a>
     <a href="about.html#services">Services</a>
     <a href="contact.html">Contact</a>
+    <a href="careers.html">Careers</a>
   </nav>
 
   <main>
@@ -114,11 +126,14 @@
 
       <div class="portal-stage">
         <div class="portal">
+          <div class="portal-halo" aria-hidden="true"></div>
+          <div class="portal-satellite portal-satellite-a" aria-hidden="true"></div>
+          <div class="portal-satellite portal-satellite-b" aria-hidden="true"></div>
           <div class="portal-ring" aria-hidden="true"></div>
           <div class="portal-frame">
             <img
               data-image="homeHero"
-              alt="Candlelit luxury wedding reception with floral installations"
+              alt="Oceanfront wedding reception table at sunset with white floral runners"
             />
             <div class="portal-veil"></div>
           </div>
@@ -133,6 +148,9 @@
 
     <!-- FEATURED WORK -->
     <section class="featured reveal" id="work">
+      <div class="seam" aria-hidden="true">
+        <svg viewBox="0 0 200 40"><path class="seam-path" d="M0,26 Q100,2 200,26" /><circle class="seam-spark" cx="100" cy="10" r="2.2" /></svg>
+      </div>
       <div class="section-head">
         <div>
           <p class="eyebrow dark">Featured Worlds</p>
@@ -143,31 +161,31 @@
 
       <div class="featured-strip reveal-stagger">
         <article class="feature-card">
-          <img data-image="featuredDesertBloom" alt="Grand wedding floral installation" />
+          <img data-image="featuredDesertBloom" alt="Grand wedding floral installation" loading="lazy" decoding="async" />
           <div class="feature-meta">
             <span>2024 · Dubai</span>
             <h3>Desert Bloom Wedding</h3>
           </div>
         </article>
         <article class="feature-card">
-          <img data-image="featuredMurexGala" alt="Gala dinner table setting" />
+          <img data-image="featuredMurexGala" alt="Elias Khalil among mirrored sphere installations beneath a monumental astronaut sculpture" loading="lazy" decoding="async" />
           <div class="feature-meta">
-            <span>2023 · Beirut</span>
-            <h3>Murex d’Or Gala</h3>
+            <span>2026 · Private Estate</span>
+            <h3>Celestial Gala</h3>
           </div>
         </article>
         <article class="feature-card">
-          <img data-image="featuredAegeanVows" alt="Candlelit evening reception" />
+          <img data-image="featuredAegeanVows" alt="Candlelit evening reception" loading="lazy" decoding="async" />
           <div class="feature-meta">
             <span>2024 · Bodrum</span>
             <h3>Aegean Vows</h3>
           </div>
         </article>
         <article class="feature-card">
-          <img data-image="featuredAtelierRunway" alt="Fashion runway event" />
+          <img data-image="featuredAtelierRunway" alt="Aerial view of a curved candlelit banquet table with a suspended moon installation" loading="lazy" decoding="async" />
           <div class="feature-meta">
-            <span>2023 · Istanbul</span>
-            <h3>Atelier Runway</h3>
+            <span>2026 · Private Estate</span>
+            <h3>Under a Borrowed Moon</h3>
           </div>
         </article>
       </div>
@@ -175,6 +193,8 @@
 
     <!-- OUR WORLD - refined from liked orbital layout -->
     <section class="our-world reveal" id="world" aria-label="Our World">
+      <div class="world-nebula" aria-hidden="true"></div>
+      <span class="world-comet" aria-hidden="true"></span>
       <div class="world-stars" aria-hidden="true"></div>
       <p class="eyebrow">The Universe</p>
       <h2 class="world-title">Our World</h2>
@@ -183,6 +203,8 @@
         <div class="orbit-ring ring-outer" aria-hidden="true"></div>
         <div class="orbit-ring ring-mid" aria-hidden="true"></div>
         <div class="orbit-ring ring-inner" aria-hidden="true"></div>
+        <div class="orbit-travel travel-outer" aria-hidden="true"><div class="travel-spin"><span class="travel-dot"></span></div></div>
+        <div class="orbit-travel travel-mid" aria-hidden="true"><div class="travel-spin"><span class="travel-dot"></span></div></div>
         <div class="orbit-core">
           <span><em>by</em> Elias Khalil</span>
         </div>
@@ -253,42 +275,42 @@
 
       <div class="masonry reveal-stagger">
         <article class="tile tall" data-category="weddings">
-          <img data-image="sampleCoastalCeremony" alt="Bride and groom portrait" />
+          <img data-image="sampleCoastalCeremony" alt="Bride and groom portrait" loading="lazy" decoding="async" />
           <div class="tile-meta">
             <span>2024 · Capri</span>
             <h3>Coastal Ceremony</h3>
           </div>
         </article>
         <article class="tile" data-category="galas">
-          <img data-image="samplePrivateDining" alt="Wedding floral arch" />
+          <img data-image="samplePrivateDining" alt="Wedding floral arch" loading="lazy" decoding="async" />
           <div class="tile-meta">
             <span>2023 · Paris</span>
             <h3>Private Dining</h3>
           </div>
         </article>
         <article class="tile wide" data-category="weddings">
-          <img data-image="sampleRoyalCelebration" alt="Celebration with sparklers" />
+          <img data-image="sampleRoyalCelebration" alt="Celebration with sparklers" loading="lazy" decoding="async" />
           <div class="tile-meta">
             <span>2024 · Riyadh</span>
             <h3>Royal Celebration</h3>
           </div>
         </article>
         <article class="tile" data-category="galas">
-          <img data-image="sampleMidnightBall" alt="Ballroom reception" />
+          <img data-image="sampleMidnightBall" alt="Ballroom reception" loading="lazy" decoding="async" />
           <div class="tile-meta">
             <span>2022 · Cairo</span>
             <h3>Midnight Ball</h3>
           </div>
         </article>
         <article class="tile tall" data-category="fashion">
-          <img data-image="sampleAtelierDetails" alt="Wedding rings detail" />
+          <img data-image="sampleAtelierDetails" alt="Wedding rings detail" loading="lazy" decoding="async" />
           <div class="tile-meta">
             <span>2023 · London</span>
             <h3>Atelier Details</h3>
           </div>
         </article>
         <article class="tile" data-category="weddings">
-          <img data-image="sampleTerraceSoiree" alt="Outdoor evening reception" />
+          <img data-image="sampleTerraceSoiree" alt="Outdoor evening reception" loading="lazy" decoding="async" />
           <div class="tile-meta">
             <span>2024 · Amalfi</span>
             <h3>Terrace Soirée</h3>
@@ -319,6 +341,9 @@
 
     <!-- OUR PRESENCE - refined offices layout -->
     <section class="presence reveal" id="presence">
+      <div class="seam" aria-hidden="true">
+        <svg viewBox="0 0 200 40"><path class="seam-path" d="M0,26 Q100,2 200,26" /><circle class="seam-spark" cx="100" cy="10" r="2.2" /></svg>
+      </div>
       <div class="presence-intro">
         <p class="eyebrow dark">Our Presence</p>
         <h2>3 Global Offices</h2>
@@ -358,8 +383,11 @@
         <img
           data-image="converseCta"
           alt="Grand villa illuminated at dusk"
+          loading="lazy"
+          decoding="async"
         />
         <div class="converse-veil"></div>
+        <div class="converse-stars" aria-hidden="true"></div>
       </div>
       <div class="converse-content">
         <a class="converse-email" href="mailto:worldwide@byeliaskhalil.com">worldwide@byeliaskhalil.com</a>
@@ -391,6 +419,7 @@
         <a href="about.html">About</a>
         <a href="about.html#services">Services</a>
         <a href="contact.html">Contact</a>
+        <a href="careers.html">Careers</a>
       </div>
 
       <div class="footer-col">
@@ -412,5 +441,6 @@
   <script src="images.js"></script>
   <script src="preview.js"></script>
   <script src="hero.js" defer></script>
+  <script src="home.js" defer></script>
 </body>
 </html>
